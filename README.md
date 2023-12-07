@@ -13,6 +13,7 @@ Make sure you have the required Python packages installed. You can install them 
 ```bash
 pip install -r requirements.txt
 ```
+
 ### Configuration
 You can adjust the following parameters in the script to customize the optimization process:
 
@@ -20,6 +21,16 @@ You can adjust the following parameters in the script to customize the optimizat
 - Size of the population (P)
 - Number of generations (GENS)
 - Range for the value of genes generated for the population (MIN and MAX)
+
+### Test Function
+The optimization algorithm is applied to the following test function defined in the script:
+
+``` bash
+def test_function(ind):
+    n = len(ind.genes)
+    sum_part = sum((0.5 * i * ind.genes[i-1])**2 for i in range(1, n))
+    return sum(x ** 2 for x in ind.genes) + sum_part
+```
 
 ### Results
 The script will output the best position found by the PSO algorithm along with the corresponding fitness value over the specified numver of generations.
