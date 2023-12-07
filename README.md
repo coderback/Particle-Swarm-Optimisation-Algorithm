@@ -25,6 +25,4 @@ You can adjust the following parameters in the script to customize the optimizat
 The script will output the best position found by the PSO algorithm along with the corresponding fitness value over the specified numver of generations.
 
 ### Acknowledgments
-PySwarms library for PSO implementation:
-''' bash https://github.com/ljvmiranda921/pyswarms
-'''
+PySwarms library for PSO implementation by: @ljvmiranda921
