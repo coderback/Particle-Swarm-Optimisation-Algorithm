@@ -12,7 +12,7 @@ Make sure you have the required Python packages installed. You can install them 
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### Configuration
 You can adjust the following parameters in the script to customize the optimization process:
 
